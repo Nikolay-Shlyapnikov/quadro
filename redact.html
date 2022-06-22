@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="redact.css">
+    <title>Redact</title>
+</head>
+
+<body>
+    <div class="step-1 d-none">
+        <div class="wrapper">
+
+        </div>
+    </div>
+    <div class="step-2">
+        <div class="wrapper d-none">
+            <img src='./white.jpg' class="white">
+            <img src='./light-gray.jpg' class="light-gray">
+            <img src='./gray.jpg' class="gray">
+            <img src='./dark-gray.jpg' class="dark-gray">
+            <img src='./black.jpg' class="black">
+        </div>
+        <div class="wrapper">
+            <div id='square' class="square__inner">
+                <div class="inner__img-wrapper img-wrapper">
+                    <img src='' class="prew">
+                    <img src="" alt="" class="result">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="wrapper">
+            <input class='file' type="file" id="uploadImage">
+            <button class="rotate rotate-left">Поворот влево</button>
+            <button class="rotate rotate-right src">Поворот вправо</button>
+            <button class="draw">Отрисовать</button>
+        </div>
+        <div class="wrapper canvas-wrapper">
+            <input type="text" value="0" class="top d-none">
+            <input type="text" value="0" class="left d-none">
+            <input type="text" value="0" class="rotate-input d-none">
+            <canvas class="for-filter d-none"></canvas>
+            <canvas class="for-crop"></canvas>
+            <canvas class="version2 version-canvas"></canvas>
+            <img src="" alt="" class="version2-prew prew-img" crossorigin="anonymous">
+
+        </div>
+
+
+    </div>
+
+    <script src="redact.js"></script>
+
+</body>
+
+</html>
