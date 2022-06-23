@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./redact.css">
+    <title>Redact</title>
+</head>
+
+<body>
+    <div class="step-1">
+        <div class="wrapper">
+
+        </div>
+    </div>
+    <div class="step-2">
+        <div class="wrapper d-none">
+            <img src='./white.jpg' class="white">
+            <img src='./light-gray.jpg' class="light-gray">
+            <img src='./gray.jpg' class="gray">
+            <img src='./dark-gray.jpg' class="dark-gray">
+            <img src='./black.jpg' class="black">
+        </div>
+        <div class="wrapper">
+            <div id='square' class="square__inner">
+                <div class="inner__img-wrapper img-wrapper">
+                    <img src='' class="prew">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="wrapper">
+
+
+        </div>
+        <div class="wrapper canvas-wrapper">
+            <input type="text" value="0" class="top">
+            <input type="text" value="0" class="left">
+            <input type="text" value="0" class="rotate-input ">
+            <canvas class="for-filter d-none"></canvas>
+            <canvas class="for-crop"></canvas>
+            <canvas class="version2 version-canvas"></canvas>
+
+        </div>
+
+
+    </div>
+
+    <script src="redact.js"></script>
+
+</body>
+
+</html>
